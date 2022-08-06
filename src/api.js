@@ -16,7 +16,7 @@ const options = {
   },
 };
 
-fetch("https://wft-geo-db.p.rapidapi.com/v1/geo/cities", options)
-  .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch((err) => console.error(err));
+export const WEATHER_API_URL =
+  "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}";
+
+export const WEATHER_API_KEY = "d63d92be2a76513e696001157214ddda";
